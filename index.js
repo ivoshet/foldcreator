@@ -1,4 +1,5 @@
-"use strict"
+#!/usr/bin/env node
+
 //to need connect mkdir package npm i mkdirp --save
 var mkdirp = require('mkdirp');
 var list = require('./list_folders');
