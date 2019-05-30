@@ -17,6 +17,13 @@
    "bin": {
       "create_structure": "./index.js"
    },
+    "keywords": {
+	"express",
+	"create structure",
+	"simple",
+	"node",
+	"mean"
+    }
    "bugs": {
       "url": "https://github.com/ivoshet/foldcreator/issues"
    },
