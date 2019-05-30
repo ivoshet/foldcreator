@@ -6,7 +6,7 @@ var list = require('./list_folders');
 
 
 //detect current name
-var current_folder = __dirname;
+var current_folder = process.cwd();
 
 //the counter for understandig when created project structure
 var counter = 0;
