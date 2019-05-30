@@ -1,0 +1,1 @@
+this script needs for creating of express folder structure. I hope it is good instrument.
