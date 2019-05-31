@@ -8,4 +8,4 @@ npm i create_structure -g
 //then start in your project directory
 
 create_structure
->>>>>>> dev2
+
