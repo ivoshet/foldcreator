@@ -3,10 +3,19 @@
 //to need connect mkdir package npm i mkdirp --save
 var mkdirp = require('mkdirp');
 var list = require('./list_folders');
+var tmp_set = require('./templates_setting');
+//add fs for work with files
+//npm i fs-extra --save
+var fs = require('fs-extra');
 
 
-//detect current name
+//detect folder with exist process
 var current_folder = process.cwd();
+
+//detect npm folder
+var npm_dir = __dirname;
+//templates directory setting
+const templates_path = '/templates/';
 
 //the counter for understandig when created project structure
 var counter = 0;
@@ -40,6 +49,21 @@ const output_success = () => {
     }
 }
 
+//move templates to project core
+const move_files = () => {
+    for(var i = 0; i < tmp_set.templates_docs.length; i ++) {
+	fs.copy(npm_dir + templates_path + tmp_set.templates_docs[i], current_folder + '/' + tmp_set.templates_docs[i], err => {
+	    if(err) console.error(err)
+	})
+	console.log('moved : ' + tmp_set.templates_docs[i]);
+	/* console.log(npm_dir + templates_path + templates_docs[i]);
+	   console.log(current_folder + templates_docs[i]);*/
+    }
+}
+
+
 create_folder_structure();
 output_success();
+move_files();
+
 

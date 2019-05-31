@@ -1,7 +1,11 @@
-this script needs for creating of express folder structure. I hope it is good instrument.
+/*
+this instrument for create simple express project environments.
+I hope that it will be usefull for you
+*/
 
 npm i create_structure -g
 
-run in your project's folder:
+//then start in your project directory
 
 create_structure
+>>>>>>> dev2

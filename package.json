@@ -2,33 +2,34 @@
    "name": "create_structure",
    "version": "0.0.5",
    "description": "express node project structure",
-    "main": "index.js",
-    "scripts": {
-	"test": "echo \"Error: no test specified\" && exit 1",
-	"start": "node index.js"
-    },
-    "repository": {
-	"type": "git",
-	"url": "git+https://github.com/ivoshet/foldcreator.git"
-    },
-    "author": "ivoshet",
-    "license": "ISC",
-    "preferGlobal": true,
-    "bin": {
-	"create_structure": "./index.js"
-    },
-    "keywords": [
-	"express",
-	"create structure",
-	"simple",
-	"node",
-	"mean"
-    ],
-    "bugs": {
-	"url": "https://github.com/ivoshet/foldcreator/issues"
-    },
-    "homepage": "https://github.com/ivoshet/foldcreator#readme",
-    "dependencies": {
-	"mkdirp": "^0.5.1"
-    }
+   "main": "index.js",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node index.js"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/ivoshet/foldcreator.git"
+   },
+   "author": "ivoshet",
+   "license": "ISC",
+   "preferGlobal": true,
+   "bin": {
+      "create_structure": "./index.js"
+   },
+   "keywords": [
+      "express",
+      "create structure",
+      "simple",
+      "node",
+      "mean"
+   ],
+   "bugs": {
+      "url": "https://github.com/ivoshet/foldcreator/issues"
+   },
+   "homepage": "https://github.com/ivoshet/foldcreator#readme",
+   "dependencies": {
+      "fs-extra": "^8.0.1",
+      "mkdirp": "^0.5.1"
+   }
 }
